@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/domain",
+    "crates/application",
+    "crates/adapters-infra",
+    "crates/adapters-api",
+    "crates/troko-daemon",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+tokio = { version = "1.40", features = ["full"] }
+axum = { version = "0.7", features = ["ws", "macros"] }
+tower-http = { version = "0.5", features = ["cors"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+sha2 = "0.10"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.10", features = ["v4", "serde"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+futures-util = "0.3"

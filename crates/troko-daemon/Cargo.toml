@@ -1,0 +1,18 @@
+[package]
+name = "troko-daemon"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+troko-domain = { path = "../domain" }
+troko-application = { path = "../application" }
+troko-adapters-infra = { path = "../adapters-infra" }
+troko-adapters-api = { path = "../adapters-api" }
+tokio.workspace = true
+axum.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[dev-dependencies]
+chrono.workspace = true

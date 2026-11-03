@@ -1,0 +1,7 @@
+/target
+/data/*.db*
+/data/crashes/*
+!/data/crashes/.gitkeep
+!/data/.gitkeep
+*.log
+.env

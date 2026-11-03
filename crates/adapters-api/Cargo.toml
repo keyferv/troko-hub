@@ -1,0 +1,16 @@
+[package]
+name = "troko-adapters-api"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+troko-domain = { path = "../domain" }
+troko-application = { path = "../application" }
+axum.workspace = true
+tower-http.workspace = true
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+futures-util.workspace = true
+tracing.workspace = true

@@ -1,0 +1,11 @@
+[package]
+name = "troko-domain"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+thiserror.workspace = true
+chrono.workspace = true
+uuid.workspace = true
